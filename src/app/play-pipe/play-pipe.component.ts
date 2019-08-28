@@ -29,4 +29,9 @@ export class PlayPipeComponent implements OnInit {
     this.toggle = !this.toggle;
   }
 
+  /**
+   * The pipe with system defined filter
+   * The pipe filter and parameters -- String and Component Property
+   */
+
 }
