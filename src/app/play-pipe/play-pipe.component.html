@@ -1,0 +1,25 @@
+<div>
+  Simple: The Date is {{birthday | date}}
+</div>
+<br>
+<div>
+  Parameter: The Date is {{birthday | date: "MM/dd/yy"}}
+</div>
+<br>
+
+<div>
+  Toggle Format:  The Date is {{birthday | date: format}}
+  <br><button (click)="toggleFormat()">Toggle</button>
+</div>
+
+<div>
+  <label for="option">Choose the date format </label>
+  <select name="option" id="option" #sel (change)="onChange(sel)">
+    <option value="short">Short</option>
+    <option value="medium">Medium</option>
+    <option value="long">Long</option>
+    <option value="full">Full</option>
+  </select>
+
+  The date is {{birthday | date: selectFormat}}
+</div>
