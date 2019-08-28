@@ -3,6 +3,6 @@ id="userName" #user
 (keyup.enter)="addUser(user.value); user.value=''">
 
 
-<div *ngFor="let profile of profiles">
-  {{profile | education: 'MCA'}}
+<div *ngFor="let profile of (profiles| education: 'MCA')">
+  {{profile.name}}
 </div>

@@ -22,8 +22,9 @@ export class PipeImpureComponent implements OnInit {
   }
 
   addUser(user: string){
-    var profile = { name: user, education: ''};
+    var profile = { name: user, education: 'MCA'};
     this.profiles.push(profile);
+    console.log(this.profiles);
   }
 
 }
