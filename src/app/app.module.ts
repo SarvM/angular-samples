@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { PlayPipeComponent } from './play-pipe/play-pipe.component';
+import { PlayCustomPipeComponent } from './play-custom-pipe/play-custom-pipe.component';
+import { ReversePipe } from './play-custom-pipe/reverse.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, PlayPipeComponent ],
+  declarations: [ AppComponent, HelloComponent, PlayPipeComponent, PlayCustomPipeComponent, ReversePipe ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
