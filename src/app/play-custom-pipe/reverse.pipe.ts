@@ -10,3 +10,10 @@ export class ReversePipe implements PipeTransform {
     return Array.from(input).reverse().join('');
   }
 }
+
+/**
+ * Pure and Impure Pipes ==> Understand Pure and Impure Functions
+Pure ==> One more condition  - The input to the pipe cannot be mutable. 
+
+The pipe has to be impure one only if it has internal state, but also if the input is mutable. 
+ */
