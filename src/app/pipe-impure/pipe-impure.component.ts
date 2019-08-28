@@ -14,11 +14,16 @@ export class PipeImpureComponent implements OnInit {
     this.profiles = [
       {name: 'John', education: 'BE'},
       {name: 'Susan', education: 'MCA'},
-      {name: 'Ruby', education: 'BE'}
+      {name: 'Ruby', education: 'MCA'}
     ]
   }
 
   ngOnInit() {
+  }
+
+  addUser(user: string){
+    var profile = { name: user, education: ''};
+    this.profiles.push(profile);
   }
 
 }

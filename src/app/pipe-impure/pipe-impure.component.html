@@ -1,3 +1,8 @@
+<input type="text" name="username" 
+id="userName" #user
+(keyup.enter)="addUser(user.value); user.value=''">
+
+
 <div *ngFor="let profile of profiles">
-  {{profile.name}}
+  {{profile | education: 'MCA'}}
 </div>
